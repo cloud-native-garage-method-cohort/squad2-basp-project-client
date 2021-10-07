@@ -69,7 +69,7 @@ export default class RecordList extends Component {
   // This following section will display the table with the records of individuals.
   render() {
     return (
-      <div>
+      <div style={{ marginTop: 20, marginLeft: 20, marginRight: 20 }}>
         <h3>Record List</h3>
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>

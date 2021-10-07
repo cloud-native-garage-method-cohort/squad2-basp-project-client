@@ -79,10 +79,10 @@ class Edit extends Component {
   // This following section will display the update-form that takes the input from the user to update the data.
   render() {
     return (
-      <div>
+      <div style={{ marginTop: 20, marginLeft: 20, marginRight: 20 }}>
         <h3 align="center">Update Record</h3>
         <form onSubmit={this.onSubmit}>
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: 20 }}>
             <label>Person's Name: </label>
             <input
               type="text"
@@ -91,7 +91,7 @@ class Edit extends Component {
               onChange={this.onChangePersonName}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: 20 }}>
             <label>Position: </label>
             <input
               type="text"
@@ -100,7 +100,7 @@ class Edit extends Component {
               onChange={this.onChangePersonPosition}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: 20 }}>
             <div className="form-check form-check-inline">
               <input
                 className="form-check-input"
@@ -140,11 +140,11 @@ class Edit extends Component {
           </div>
           <br />
  
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: 20 }}>
             <input
               type="submit"
               value="Update Record"
-              className="btn btn-primary"
+              className="btn btn-secondary"
             />
           </div>
         </form>

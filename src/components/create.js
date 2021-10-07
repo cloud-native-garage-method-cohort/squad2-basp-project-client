@@ -64,10 +64,10 @@ export default class Create extends Component {
   // This following section will display the form that takes the input from the user.
   render() {
     return (
-      <div style={{ marginTop: 20 }}>
+      <div style={{ marginTop: 20, marginLeft: 20, marginRight: 20 }}>
         <h3>Create New Record</h3>
         <form onSubmit={this.onSubmit}>
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: 20 }}>
             <label>Name of the person: </label>
             <input
               type="text"
@@ -76,7 +76,7 @@ export default class Create extends Component {
               onChange={this.onChangePersonName}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: 20 }}>
             <label>Person's position: </label>
             <input
               type="text"
@@ -85,7 +85,7 @@ export default class Create extends Component {
               onChange={this.onChangePersonPosition}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: 20 }}>
             <div className="form-check form-check-inline">
               <input
                 className="form-check-input"
@@ -123,11 +123,11 @@ export default class Create extends Component {
               <label className="form-check-label">Senior</label>
             </div>
           </div>
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: 20 }}>
             <input
               type="submit"
               value="Create person"
-              className="btn btn-primary"
+              className="btn btn-secondary"
             />
           </div>
         </form>

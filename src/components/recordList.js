@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
 
+const server_url = process.env.SERVER_URL || "http://basp-server:80";
+
+
 const Record = (props) => (
   <tr>
     <td>{props.record.person_name}</td>
@@ -33,7 +36,7 @@ export default class RecordList extends Component {
   // This method will get the data from the database.
   componentDidMount() {
     axios
-      .get("http://localhost:5000/record/")
+      .get(server_url + "/record/")
       .then((response) => {
         this.setState({ records: response.data });
       })
@@ -44,7 +47,7 @@ export default class RecordList extends Component {
 
   // This method will delete a record based on the method
   deleteRecord(id) {
-    axios.delete("http://localhost:5000/" + id).then((response) => {
+    axios.delete(server_url + "/" +id).then((response) => {
       console.log(response.data);
     });
 

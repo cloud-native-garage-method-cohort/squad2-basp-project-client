@@ -2,6 +2,8 @@ import React, { Component } from "react";
 // This will require to npm install axios
 import axios from 'axios';
  
+const server_url = process.env.SERVER_URL || "http://basp-server:80";
+
 export default class Create extends Component {
   // This is the constructor that stores the data.
   constructor(props) {
@@ -50,7 +52,8 @@ export default class Create extends Component {
     };
  
     axios
-      .post("http://localhost:5000/record/add", newperson)
+      //.post("http://localhost:5000/record/add", newperson)
+      .post(server_url + "/record/add", newperson)
       .then((res) => console.log(res.data));
  
     // We will empty the state after posting the data to the database

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import axios from 'axios';
 import { withRouter } from "react-router";
 
-const server_url = process.env.SERVER_URL || "http://basp-server:80";
+const server_url = process.env.SERVER_URL || "https://basp-server-squad2-basp.itzroks-100000kr1k-c03bri-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud/";
 
 
 class Edit extends Component {

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // This will require to npm install axios
 import axios from 'axios';
  
-const server_url = process.env.SERVER_URL || "http://basp-server:80";
+const server_url = process.env.SERVER_URL || "https://basp-server-squad2-basp.itzroks-100000kr1k-c03bri-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud/";
 
 export default class Create extends Component {
   // This is the constructor that stores the data.

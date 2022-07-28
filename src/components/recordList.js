@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
 
-const server_url = process.env.SERVER_URL || "https://basp-server-squad2-basp.itzroks-100000kr1k-c03bri-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud";
+const server_url = process.env.SERVER_URL || "https://squad-2-basp-project-server-git-squad-project.itzroks-310001srsu-4hlusu-6ccd7f378ae819553d37d5f2ee142bd6-0000.eu-de.containers.appdomain.cloud";
 
 
 const Record = (props) => (
